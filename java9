@@ -1,0 +1,39 @@
+
+import React, { useState } from "react";
+
+function App() {const [color, setColor] = useState("");
+return (
+<div>
+<h1>Color Selection</h1>
+
+<button onClick={() => setColor("red")}>Red</button>
+<button onClick={() => setColor("blue")}>Blue</button>
+<button onClick={() => setColor("green")}>Green</button>
+
+<h2 style={{ color: color }}>
+{color && "Selected color: " + color}
+</h2>
+</div>
+    );
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//npx create-react-app myapp
+cd myapp
+npm start
